@@ -1,0 +1,481 @@
+/*
+Theme Name: Wanderlust
+Theme URI: 
+Author: Chelsea M. P. Lorenz
+Author URI: http://chelsealorenz.com
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats
+Text Domain: icebox
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*========================
+    WordPress Core
+==========================*/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/*========================
+    Globals
+==========================*/
+#main-content {
+    margin-top: 80px;
+    position: relative;
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+hr {
+    margin: 30px 0;
+}
+a {
+    color: #0068AC;
+}
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+form.search-form input {
+    border-radius: 4px 0 0 4px;
+    font-size: 18px;
+    height: 40px;
+}
+form.search-form button {
+    border-radius: 0 4px 4px 0;
+    margin-left: -5px;
+    font-size: 18px;
+}
+
+/*========================
+    Header
+==========================*/
+header {
+    background-color: #0068AC;
+    padding: 20px 0;
+    height: 80px;
+    position: relative;
+    box-shadow: 1px -8px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #fff;
+    z-index: 1;
+}
+header #site-title {
+    display: inline-block;
+    margin: 0;
+}
+header #site-title a {
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+header #site-title a:hover {
+    color: #ddd;
+}
+header #site-title a:focus {
+    text-decoration: none;
+}
+header #menu-icon {
+    position: fixed;
+    right: 11%;
+    cursor: pointer;
+    color: #fff;
+}
+header #menu-icon:hover {
+    color: #ddd;
+}
+header .active-menu-icon:hover {
+    color: #fff;
+}
+
+/*========================
+    Nav
+==========================*/
+#primary-nav {
+    background: url(img/darkdenim3.png) repeat;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 100px 20px;
+    width: 25%;
+    z-index: -1;
+}
+#primary-nav ul li a {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+#primary-nav ul li a:hover {
+    color: #0068AC;
+}
+#primary-nav .search-form input {
+    width: 80%;
+    color: #fff;
+    background-color: transparent;
+}
+#primary-nav .search-form input:focus {
+    border-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset, 0 0 8px rgba(0,104,172,0.8);
+}
+#primary-nav .search-form button {
+    width: 20%;
+    color: #fff;
+    background-color: transparent;
+}
+#primary-nav .search-form button:hover {
+    background-color: #0068AC;
+}
+#primary-nav .social-links {
+    display: table;
+    margin: 0 auto;
+}
+#primary-nav .social-links i {
+    margin: 0 10px;
+    color: #fff;
+}
+#primary-nav .social-links a:hover i {
+    transform: rotate(-10deg);
+    color: #0068AC;
+}
+
+/*========================
+    Front Page
+==========================*/
+.home #main-content {
+    padding: 0;
+}
+.home .jumbotron {
+    margin-bottom: 0;
+    padding: 70px;
+    background-image: url(img/bwg-3.jpeg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+.home .jumbotron h2 {
+    font-size: 47px;
+    line-height: 80px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.home .jumbotron p {
+    margin-top: 20px;
+}
+
+/*========================
+    Page
+==========================*/
+.page h2 {
+    color: #0068AC;
+    font-weight: 500;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+.page h3 {
+    border-bottom: 1px dashed #0068AC;
+    color: #0068AC;
+    font-weight: 300;
+    margin: 40px 0 10px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}
+.page h4 {
+    margin: 10px 0 5px;
+    font-weight: 400;
+}
+.page p {
+    margin: 0;
+    line-height: 22px;
+}
+.page p strong {
+    font-weight: 500;
+}
+.page p em {
+    font-style: italic;
+}
+.page p strong em {
+    font-weight: 600;
+}
+.page ul {
+    list-style: circle inside;
+    line-height: 22px;
+    margin: 5px 0 20px 15px;
+}
+
+/*========================
+    Contact Form
+==========================*/
+form.wpcf7-form {
+    display: table;
+    margin: 25px auto 0;
+}
+form.wpcf7-form label,
+form.wpcf7-form .captcha span {
+    margin: 15px 10px 0 0;
+    font-weight: 500;
+    text-align: right;
+    width: 94px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+form.wpcf7-form br {
+    display: none;
+}
+form.wpcf7-form input[type="text"],
+form.wpcf7-form input[type="email"],
+form.wpcf7-form input[type="url"],
+form.wpcf7-form textarea {
+    border: none;
+    border-bottom: 1px solid #0068ac;
+    margin: 10px 0 0;
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    padding: 0 4px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: #0068ac;
+}
+form.wpcf7-form textarea {
+    margin: 15px 0 0;
+    height: auto;
+}
+form.wpcf7-form input[type="submit"] {
+    text-transform: uppercase;
+    border: 1px solid #0068ac;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #0068ac;
+    width: 20%;
+    font-size: 14px;
+    margin: 20px 0 0 107px;
+    padding: 5px;
+}
+form.wpcf7-form input[type="submit"]:hover {
+    background-color: #0068ac;
+    color: #fff;
+}
+
+/*========================
+    Home (Portfolio)
+==========================*/
+#portfolio article a {
+    display: block;
+}
+#portfolio article .thumbnail {
+    padding: 0;
+    height: 360px;
+    overflow: hidden;
+}
+#portfolio article a:hover .thumbnail {
+    border-color: #0068AC;
+}
+#portfolio article .caption {
+    border-bottom: 1px solid #ddd;
+}
+#portfolio article a:hover .caption {
+    background-color: #0068AC;
+    border-color: #0068AC;
+    color: #fff;
+}
+#portfolio article .caption h2 {
+    margin: 0;
+}
+#portfolio img {
+    display: inline-block;
+}
+#portfolio .attachment-thumb-wide {
+    width: 100%;
+    height: auto;
+}
+#portfolio .attachment-thumb-long {
+    width: 50%;
+}
+#portfolio .attachment-thumb-square {
+    width: 50%;
+    height: auto;
+}
+
+/*========================
+    Category Page
+==========================*/
+.category article a {
+    display: block;
+}
+.category article .thumbnail {
+    padding: 0;
+}
+.category article a:hover .thumbnail {
+    border-color: #0068AC;
+}
+.category article .caption {
+    border-bottom: 1px solid #ddd;
+}
+.category article a:hover .caption {
+    background-color: #0068AC;
+    border-color: #0068AC;
+    color: #fff;
+}
+.category article .caption h2 {
+    margin: 0;
+}
+
+/*========================
+    Single Page
+==========================*/
+.single aside {
+    border-right: 2px solid #0068AC;
+}
+.single aside .pager a {
+    border-color: #0068AC;
+}
+.single aside .pager a:hover {
+    background-color: #0068AC;
+    color: #fff;
+}
+#slideshow {
+    position: relative;
+    height: 400px;
+}
+#slideshow .slide {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+#slideshow .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+}
+#slideshow #slide-1 {
+    display: block;
+}
+#slideshow-thumbs {
+    height: 150px;
+}
+#slideshow-thumbs .thumb {
+    display: inline-block;
+}
+#slideshow-thumbs .thumb img:hover,
+#slideshow-thumbs .active-thumb {
+    border: 1px solid #0068AC;
+}
+
+/*========================
+    404 + Search
+==========================*/
+.error404 .search-form input,
+.search-no-results .search-form input {
+    width: 40%;
+}
+
+/*========================
+    Footer
+==========================*/
+footer {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #0068AC;
+    padding: 20px 0; 
+    z-index: 1;
+}
+footer p {
+    color: #999;
+    font-size: 14px;
+    margin: 0;
+}
+
+/*========================
+    Browser Responsive
+==========================*/
+@media (max-width: 1209px) {
+    .home .jumbotron h2 {
+        font-size: 39px;
+        line-height: 72px;
+    }
+}
+/*@media (max-width: 1060px) {
+    .home .jumbotron h2 {
+        font-size: 39px;
+        line-height: 72px;
+    }
+}*/

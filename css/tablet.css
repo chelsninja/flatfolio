@@ -1,0 +1,13 @@
+/*========================
+   Tablet Responsive
+==========================*/
+.home .jumbotron h2 {
+	font-size: 37px;
+	line-height: 70px;
+}
+
+/*@media (max-width: px) {
+	header {
+		background-color: yellow;
+	}
+}*/

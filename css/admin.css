@@ -1,0 +1,30 @@
+.radio-inline input[type="radio"] {
+  float: left;
+  margin-left: -20px;
+}
+.radio-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline:first-of-type {
+  padding: 0;
+}
+.radio-inline + .radio-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+#wl-cat-form input {
+  display: none;
+}
+#wl-cat-form img {
+  border: 1px solid transparent;
+}
+#wl-cat-form label:hover img,
+#wl-cat-form img.selected {
+  border: 1px solid #444;
+}
