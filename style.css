@@ -1,8 +1,8 @@
 /*
-Theme Name: Wanderlust
-Theme URI: 
+Theme Name: Flatfolio
+Theme URI: https://github.com/cmlorenz/flatfolio
 Author: Chelsea M. P. Lorenz
-Author URI: http://chelsealorenz.com
+Author URI: http://chelsealorenz.com/
 Description: 
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -145,22 +145,25 @@ header #site-title a:focus {
 }
 header #menu-icon {
     position: fixed;
-    right: 11%;
+    right: 10.5%;
     cursor: pointer;
     color: #fff;
 }
 header #menu-icon:hover {
     color: #ddd;
 }
-header .active-menu-icon:hover {
-    color: #fff;
+header #menu-icon.active-menu-icon {
+    color: #0068AC;
+}
+header #menu-icon.active-menu-icon:hover {
+    transform: rotate(-5deg);
 }
 
 /*========================
     Nav
 ==========================*/
 #primary-nav {
-    background: url(img/darkdenim3.png) repeat;
+    background: url('img/darkdenim3.png') repeat;
     position: fixed;
     right: 0;
     top: 0;
@@ -219,7 +222,6 @@ header .active-menu-icon:hover {
 .home .jumbotron {
     margin-bottom: 0;
     padding: 70px;
-    background-image: url(img/bwg-3.jpeg);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;

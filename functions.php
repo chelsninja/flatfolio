@@ -3,7 +3,7 @@
  * Wanderlust functions and definitions
  *
  * @package WordPress
- * @subpackage Wanderlust
+ * @subpackage Flatfolio
  */
 
 /**
@@ -18,7 +18,7 @@ if ( ! isset( $content_width ) ) {
  * Theme setup.
  *
  */
-function wanderlust_setup() {
+function ff_setup() {
 	// Enable support for Post Thumbnails
 	add_theme_support( 'post-thumbnails' );
 
@@ -30,13 +30,13 @@ function wanderlust_setup() {
 
 	// Register nav menu locations.
 	register_nav_menus( array(
-		'primary'   => __( 'Side primary menu', 'wanderlust' )
+		'primary'   => __( 'Side primary menu', 'flatfolio' )
 	) );
 
 	// Switch default core markup to output valid HTML5.
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 }
-add_action( 'after_setup_theme', 'wanderlust_setup' );
+add_action( 'after_setup_theme', 'ff_setup' );
 
 /**
  * Register custom init functions.
@@ -287,7 +287,7 @@ add_filter( 'get_search_form', 'wanderlust_search_form' );
  *
  * @return string
  */
-function wanderlust_breadcrumbs() {
+function ff_breadcrumbs() {
 	echo '<ol class="breadcrumb">';
 	if ( !is_home() ) :
 		echo '<li><a href="';

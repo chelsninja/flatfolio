@@ -11,7 +11,7 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package Wordpress
- * @subpackage Wanderlust
+ * @subpackage Flatfolio
  */
 
 get_header();

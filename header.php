@@ -4,7 +4,7 @@
  * Description: Displays all of the <head> section and everything up till #main-content.
  *
  * @package WordPress
- * @subpackage Wanderlust
+ * @subpackage Flatfolio
  */
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -28,18 +28,14 @@
 	<body <?php body_class(); ?>>
 		<header class="navbar-fixed-top">
 			<div class="container">
-				<h1 id="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</h1>
-				<a class="sr-only" href="#main-content">Skip to main content</a>
+				<h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<a href="#main-content" class="sr-only">Skip to main content</a>
 				<i id="menu-icon" class="fa fa-bars fa-3x"></i>
 			</div>
 		</header>
 		<nav id="primary-nav" role="navigation"><?php
 			wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class' => 'nav nav-stacked' ) ); ?>
-			<hr>
-			<?php get_search_form(); ?>
-			<hr>
+			<hr><?php get_search_form(); ?><hr>
 			<div class="social-links">
 				<a href="http://www.linkedin.com/in/chelsealorenz"><i class="fa fa-linkedin-square fa-3x"></i></a>
 				<a href="https://github.com/cmlorenz"><i class="fa fa-github fa-3x"></i></a>

@@ -4,7 +4,7 @@
  * Description: Displays footer content and the closing of the #main-content div element.
  *
  * @package WordPress
- * @subpackage Wanderlust
+ * @subpackage Flatfolio
  */
 ?>
 		</section><!-- #main-content -->

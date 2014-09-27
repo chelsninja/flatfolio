@@ -7,14 +7,12 @@ jQuery(document).ready(function($) {
 		setTimeout(function(){
 			$('nav').css('z-index',1);
 		}, 500);
-		$(this).css('color','#0068AC');
 		$(this).addClass('active-menu-icon');
 	}, function(){
 		$('nav').css('z-index',-1);
 		$('header').animate({right: '0%'}, 500);
 		$('#main-content').animate({right: '0%'}, 500);
 		$('footer').animate({right: '0%'}, 500);
-		$(this).css('color','#fff');
 		$(this).removeClass('active-menu-icon');
 	});
 	// slideshow functionality
